@@ -1,4 +1,4 @@
-# Tps-Proyecto-Nicol-s-Rambaldi-2026
+# Tps-Proyecto-Nicolas-Rambaldi-2026
 Tps de proyecto informatico
 Nicolás Rambaldi, nicolas.rambaldi1306@gmail.com, 3ro 4ta 2026
 
@@ -484,8 +484,6 @@ void loop()
 <img width="184" height="375" alt="image" src="https://github.com/user-attachments/assets/63de68ae-95de-4b2b-80a3-a21b15cd4b9b" />
 
 
-complicaciones: 
-al parecer me saltee 2 puntos xd, no esq se me haya complicado, sino q me habre apurado y no los vi hasta ahora q los estuve poniendo
 
 consignas:
 1-
