@@ -1,7 +1,10 @@
 # Tps-Proyecto-Nicolas-Rambaldi-2026
 Nicolás Rambaldi
+
 nicolas.rambaldi1306@gmail.com
+
 4to 1ra
+
 Gonzalo Consorti
 
 
