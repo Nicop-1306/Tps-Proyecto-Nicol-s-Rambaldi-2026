@@ -7,16 +7,20 @@ nicolas.rambaldi1306@gmail.com
 
 Gonzalo Consorti
 
+Controlar un anillo de LEDs NeoPixel 12LEDs para mostrar animaciones de colores, cambiando los LEDs uno por uno o en grupos, .
+Prender el LED 0 de color rojo, esperar 500 ms,
+Apagar el LED 0, prender el LED 1 de color verde, esperar 500 ms,
+Apagar el LED 1, prender el LED 2 de color azul, esperar 500 ms,
+… y así hasta el LED 12, cambiando los colores.
+Encender el LED 0, luego apagarlo y encender el 1, luego el 2, etc. hasta el último LED
+Luego, hacer el barrido en sentido contrario, LED 13 a LED 0
+Mostrar un patrón de colores Randoms:
+Por ejemplo, LEDs pares en rojo  esperar por 500ms
+luego se apagan
+y LEDs impares en azul, mantener por 500ms
+luego se apagan
+cambiar la combinación de colores entre cada prendido y apagado
+El ciclo principal del programa deberá ejecutar la 1° secuencia de efectos, al terminar esperar 1s reproducir el 2° efecto esperar 1s reproducir el 3° efecto y volver a empezar
 
-SOLO USANDO TEMAS QUE VIMOS EN CLASE
-Desarrollar un código y un esquema electrónico básico que haga una secuencia de luces con 3 leds RGB.
-
-La secuencia es la siguiente: 
-prende el 1°led en color rojo fuerte. (De forma analógica)
-se apaga el 1° led y se prende el 2° led en color magenta(de forma digital)
-se paga el 2° led y se prende el 3° led en color cian(De forma analógica y clarito/tenue)
-se paga el 3° led y se prende el 1° led  devuelta y así infinitamente.
-Entre cada cambio de color realizar un zumbido con un buzzer (que no dure mas de 100ms y de forma analógica)
-Usar variables no declarativas para organizar los pines usados
-
-Extra opcional: entre que se apaga un led y se prende el siguiente hacer que parpaden los 3 led 4 veces rapido (100ms) en color naranja.
+Cambiar la velocidad de la animación de cada efecto con un potenciómetro (usando lectura analógica)
+Agregar un botón para cambiar el patrón de efecto activo en vez de que pase automáticamente al terminar
