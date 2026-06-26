@@ -14,7 +14,6 @@ LiquidCrystal LCD(8 , 9, 10, 11, 12, 13);
 
 void setup()
 {
-  pinMode(AZUL, OUTPUT);
   pinMode(VERDE, OUTPUT);
   pinMode(ROJO, OUTPUT);
   pinMode(TEMP, INPUT);
@@ -96,10 +95,13 @@ void loop()
     delay(300);
     analogWrite(ROJO, 255);
     analogWrite(BUZZ, 255);
+    delay(300);
+    analogWrite(ROJO, 0);
+    analogWrite(BUZZ, 0);
+    delay(100);
   }}
   
   delay(2000);
   analogWrite(ROJO,0);
-  analogWrite(AZUL,0);
   analogWrite(VERDE,0);
 }
