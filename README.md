@@ -9,14 +9,17 @@ Gonzalo Consorti
 
 
 SOLO USANDO TEMAS QUE VIMOS EN CLASE
-Desarrollar un código y un esquema electrónico básico que haga una secuencia de luces con 3 leds RGB.
+-Leer datos que nos brinda un sensor de temperatura(TPM35) y uno de luz ambiental(LDR).
+-Mostrar esos 2 datos por el monitor serial con el siguiente formato:
+"El nivel de luz actual es:"  VALOR " y la temperatura actual:" VALOR  "ºc"   c/u en una linea distinta                                
+( utilizar condicional compuesto)
+-Hacer prender un led RGB según la temperatura que mida el sensor:
+                -rojo: si es más de 90°c
+                -azul: si es menos de 18°c
+                -verde: si está entre 18ºc y 90ºc
 
-La secuencia es la siguiente: 
-prende el 1°led en color rojo fuerte. (De forma analógica)
-se apaga el 1° led y se prende el 2° led en color magenta(de forma digital)
-se paga el 2° led y se prende el 3° led en color cian(De forma analógica y clarito/tenue)
-se paga el 3° led y se prende el 1° led  devuelta y así infinitamente.
-Entre cada cambio de color realizar un zumbido con un buzzer (que no dure mas de 100ms y de forma analógica)
-Usar variables no declarativas para organizar los pines usados
-
-Extra opcional: entre que se apaga un led y se prende el siguiente hacer que parpaden los 3 led 4 veces rapido (100ms) en color naranja.
+(utilizar condicional compuesto y MAP invertido)
+ -Solo se deberá prender el led como se indica arriba, siempre y cuando la luz ambiental este entre el 30% y 70%. 
+siendo 0%  TODA LA LUZ ENCENDIDA
+siendo 100% TODA LA LUZ APAGADA
+Todos los pines deberán ser demarcados como variables constantes con nombres declarativo y los mensajes acortados con Macros
