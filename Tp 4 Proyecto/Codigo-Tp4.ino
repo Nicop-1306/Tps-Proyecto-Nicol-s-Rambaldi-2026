@@ -1,6 +1,6 @@
-#define MSG_LUZ "El nivel de luz actual es: "
-#define MSG_TEMP " y la temperatura actual: "
-#define MSG_GRADOS "ºc" 
+#define LUZ "El nivel de luz actual es: "
+#define TEMP " y la temperatura actual: "
+#define GRADOS "ºc" 
 
 int PIN_TEMP = A1;
 int PIN_LDR  = A2;
@@ -29,13 +29,13 @@ void loop() {
   float milivoltios = (valorTemp * 5000.0) / 1023.0;
   float temperatura = (milivoltios - 500.0) / 10.0; 
 
-  Serial.print(MSG_LUZ);
+  Serial.print(LUZ);
   Serial.print(porcentajeLuz);
   Serial.println("%"); 
 
-  Serial.print(MSG_TEMP);
+  Serial.print(TEMP);
   Serial.print(temperatura);
-  Serial.println(MSG_GRADOS); 
+  Serial.println(GRADOS); 
   
   if (porcentajeLuz >= 30 && porcentajeLuz <= 70) {
 
