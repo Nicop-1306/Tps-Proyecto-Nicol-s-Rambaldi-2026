@@ -8,8 +8,7 @@
 #define ECHO 6
 #define TRIG 7
 #define MOV 2
-#define LUZ A0 // Cambiado a A0 en la protoboard para medir el 20%
-
+#define LUZ A0 
 LiquidCrystal LCD(8 , 9, 10, 11, 12, 13); 
 
 void setup()
